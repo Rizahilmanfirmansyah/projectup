@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tugas Riza</title>
+  <title>E-Kantin UP</title>
 
   <!-- Google Font: Source Sans Pro -->
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -23,13 +23,13 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block ">
+      {{-- <li class="nav-item d-none d-sm-inline-block ">
         <div class="d-flex justify-content-end">
         <div class="dropdown">
           <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Aksi
           </button>
-          {{-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <div class="container">
             <button class="btn btn-primary">{{Auth::user()->role}}</button>
             <br><br>
@@ -38,10 +38,10 @@
               <button type="submit" class="btn btn-danger">Logout</button>
             </form>
           </div>
-          </div> --}}
+          </div> 
         </div>
       </div>
-      </li>
+      </li> --}}
     </ul>
 
     <!-- Right navbar links -->
@@ -159,9 +159,11 @@
       </li>
 -->
       <li class="nav-item">
+        
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
+       
       </li>
       <!--Pengaturan widget harus dengan demo.js
       <li class="nav-item">

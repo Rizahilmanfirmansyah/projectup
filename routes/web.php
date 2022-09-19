@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PembeliController;
 use App\Http\Controllers\PenjualController;
+use App\Http\Controllers\DashController;
+use App\Http\Controllers\LoginController;
 
 
 /*

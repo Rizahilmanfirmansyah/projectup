@@ -1,12 +1,14 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
 <nav class="mt-2">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
       <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
            <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{url('dashboard')}}" class="nav-link">
               <i class="nav-icon bi bi-clipboard-fill"></i>
               <p>
                 Dashboard
@@ -14,7 +16,7 @@
             </a>
           </li>
      <li class="nav-item">
-        <a href="" class="nav-link">
+        <a href="{{route('penjual.index')}}" class="nav-link">
           <i class="nav-icon bi bi-people-fill"></i>
           <p>
            Data Penjual
@@ -22,17 +24,22 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="" class="nav-link">
+        <a href="{{route('pembeli.index')}}" class="nav-link">
           <i class="nav-icon bi bi-people-fill"></i>
           <p>
            Data Pembeli
           </p>
         </a>
       </li>
+      <br><br><br><br><br><br><br>
+      <div class="container">
       <li class="nav-item">
-        <form action="{{route('aksilogout')}}"></form>
-
+        <form action="{{route('aksilogout')}}" method="post">
+          @csrf
+          <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
       </li>
+    </div>
        {{-- <li class="nav-item">
         <a href="{{ route('pegawai.index')}}" class="nav-link">
           <i class="nav-icon bi bi-people-fill"></i>

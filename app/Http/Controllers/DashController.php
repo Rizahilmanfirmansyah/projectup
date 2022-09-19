@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\penjual;
+use App\Models\pembeli;
+
+
 
 class DashController extends Controller
 {
